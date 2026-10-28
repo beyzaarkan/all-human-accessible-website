@@ -1,0 +1,361 @@
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinie | HvanA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Dark mode -->
+    <input type="checkbox" id="dark-mode" class="theme-checkbox">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="logo">
+        <img src="assets/hvana-logo.png" alt="HvanA">
+      </a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="#">Nieuws</a>
+        <a href="#">Video</a>
+        <a href="#">Columns</a>
+        <a href="index.html" aria-current="page">Opinie</a>
+        <a href="#">Podcast</a>
+      </nav>
+
+      <div class="header-icons">
+        <label for="dark-mode" class="theme-toggle">
+          <span class="moon-icon" aria-hidden="true">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.5 8.5 0 1 0 20.2 15.3Z"/>
+  </svg>
+</span>
+          <span class="sun-icon" aria-hidden="true">☀</span>
+          <span class="visually-hidden">Donkere modus</span>
+        </label>
+
+        <a href="#article-search" class="search-icon" aria-label="Zoek artikelen">⌕</a>
+
+        <button
+          type="button"
+          class="menu-icon"
+          aria-label="Open navigatiemenu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobiele navigatie -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobiele navigatie" hidden>
+      <a href="#">Nieuws</a>
+      <a href="#">Video</a>
+      <a href="#">Columns</a>
+      <a href="index.html" aria-current="page">Opinie</a>
+      <a href="#">Podcast</a>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h1>Opinie</h1>
+      </section>
+
+      <!-- UITGELICHT ARTIKEL -->
+      <article class="featured">
+        <img
+          src="assets/dansen.png"
+          alt="Studenten die dansen in een dansstudio"
+        >
+
+        <div class="featured-content">
+          <p class="category">Opinie</p>
+
+          <h2>
+            ‘Ga dansen. Acteren. Zingen. Doe iets waarvan je denkt:
+            absoluut niets voor mij’
+          </h2>
+
+          <p>
+            Studenten moeten elkaar ook buiten de muren van de hogeschool
+            opzoeken, vindt CREA-directeur Dennis van Galen.
+          </p>
+
+          <a href="#">Lees artikel &rarr;</a>
+        </div>
+      </article>
+
+      <!-- MEER OPINIE -->
+      <section class="opinions" id="artikelen">
+        <div class="section-heading">
+          <h2>Meer opinie</h2>
+          <a href="#artikelen">Alle opinieartikelen &rarr;</a>
+        </div>
+
+        <!-- ZOEKEN EN FILTEREN -->
+        <div class="article-tools">
+          <label for="article-search">Zoek een opinieartikel</label>
+          <input
+            type="search"
+            id="article-search"
+            placeholder="Zoek bijvoorbeeld op collegegeld..."
+          >
+
+          <div class="filters" role="group" aria-label="Filter artikelen op onderwerp">
+            <button type="button" class="active" data-filter="alles" aria-pressed="true">
+              Alle artikelen
+            </button>
+            <button type="button" data-filter="onderwijs" aria-pressed="false">
+              Onderwijs
+            </button>
+            <button type="button" data-filter="studentenleven" aria-pressed="false">
+              Studentenleven
+            </button>
+            <button type="button" data-filter="bestuur" aria-pressed="false">
+              Bestuur
+            </button>
+            <button type="button" data-filter="duurzaamheid" aria-pressed="false">
+              Duurzaamheid
+            </button>
+          </div>
+
+          <p id="article-count" aria-live="polite"></p>
+        </div>
+
+        <!-- ARTIKELEN -->
+        <div class="article-grid">
+
+          <article class="article-card" data-category="studentenleven">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over het WK 2026">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Mening</span>
+              <img
+                src="assets/wk-hva.png"
+                alt="Studenten spelen basketbal op een plein"
+              >
+            </div>
+
+            <h3>‘Het WK 2026 kan de HvA leren hoe verbondenheid werkt’</h3>
+          </article>
+
+          <article class="article-card" data-category="bestuur">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over medezeggenschap">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Mening</span>
+              <img
+                src="assets/verkiezingen-hva.png"
+                alt="Persoon staat tussen verschillende pijlen"
+              >
+            </div>
+
+            <h3>
+              ‘Stel je verkiesbaar op de HvA, juist nu medezeggenschap
+              zo belangrijk is’
+            </h3>
+          </article>
+
+          <article class="article-card" data-category="onderwijs">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over collegegeld">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Mening</span>
+              <img
+                src="assets/collegegeld.png"
+                alt="Illustratie van een brandende vlam"
+              >
+            </div>
+
+            <h3>‘Stop eens over die 2.600 euro aan collegegeld’</h3>
+          </article>
+
+          <article class="article-card" data-category="onderwijs">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over de studentenquête">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Mening</span>
+              <img
+                src="assets/studenten-enquete.png"
+                alt="Illustratie over vragen en antwoorden"
+              >
+            </div>
+
+            <h3>
+              ‘Waarom meedoen aan de Nationale Studenten Enquête
+              wél belangrijk is’
+            </h3>
+          </article>
+
+          <article class="article-card" data-category="bestuur">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over AI bij bestuurskunde">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Bestuur</span>
+              <img
+                src="assets/bestuurskunde-ai.png"
+                alt="Persoon gebruikt een telefoon met AI"
+              >
+            </div>
+
+            <h3>
+              ‘We leren bij bestuurskunde veel te weinig over de omgang met AI’
+            </h3>
+          </article>
+
+          <article class="article-card" data-category="onderwijs">
+            <label class="save-button">
+              <input type="checkbox" aria-label="Bewaar artikel over opleidingskwaliteit">
+              <span class="heart-empty" aria-hidden="true">♡</span>
+              <span class="heart-filled" aria-hidden="true">♥</span>
+            </label>
+
+            <div class="article-image">
+              <span class="tag">Mening</span>
+              <img
+                src="assets/opleidingskwaliteit.png"
+                alt="Persoon vult een vragenlijst in"
+              >
+            </div>
+
+            <h3>
+              ‘Zeg nee tegen de NSE: dit onderzoek zegt niets over
+              de kwaliteit van jouw opleiding’
+            </h3>
+          </article>
+
+        </div>
+
+        <!-- PAGINANUMMERS -->
+<nav class="pagination" aria-label="Artikelenpagina's">
+  <span aria-current="page">1</span>
+  <span>2</span>
+  <span>3</span>
+  <span class="extra-page">4</span>
+  <span class="extra-page">5</span>
+  <span class="dots" aria-hidden="true">…</span>
+  <span aria-hidden="true">›</span>
+</nav>
+      </section>
+
+      <!-- NIEUWSBRIEF -->
+      <section class="newsletter">
+        <div class="newsletter-content">
+          <h2>Niks meer missen van HvanA?</h2>
+
+          <form>
+            <label for="first-name">Voornaam</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="given-name"
+              required
+            >
+
+            <label for="email">E-mailadres</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+
+            <button type="submit">Mis geen updates! &rarr;</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <div>
+          <a href="#">Over HvanA</a>
+          <a href="#">Auteurs</a>
+          <a href="#">Colofon</a>
+        </div>
+
+        <div>
+          <a href="#">Privacyverklaring</a>
+          <a href="#">Cookievoorkeuren</a>
+          <a href="#">Adverteren</a>
+          <a href="#">Werken bij HvanA</a>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+  <img src="assets/hvana_logo_wit.png" alt="HvanA">
+</div>
+
+      <div class="footer-contact">
+        <a href="mailto:info@hvana.nl">info@hvana.nl</a>
+        
+<div class="social-links" aria-hidden="true">
+  <!-- Instagram -->
+  <span>
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="18" cy="6" r="1.2" fill="currentColor"/>
+    </svg>
+  </span>
+
+  <!-- YouTube -->
+  <span>
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/>
+      <path d="M10 9 L16 12 L10 15 Z" fill="#111"/>
+    </svg>
+  </span>
+
+  <!-- LinkedIn -->
+  <span>
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="2" fill="currentColor"/>
+      <circle cx="7" cy="8" r="1.5" fill="#111"/>
+      <path d="M6 11 V18 M11 18 V11 M11 14 C11 10 18 10 18 14 V18" stroke="#111" stroke-width="2" fill="none"/>
+    </svg>
+  </span>
+
+  <!-- TikTok -->
+  <span>
+    <svg viewBox="0 0 24 24">
+      <path d="M14 2 H17 C17 5 19 7 22 7 V10 C20 10 18 9 17 8 V16 C17 20 14 22 10 22 C6 22 3 19 3 15 C3 11 6 8 10 8 V12 C8 12 7 13 7 15 C7 17 8 18 10 18 C12 18 13 17 13 15 V2 Z" fill="currentColor"/>
+    </svg>
+  </span>
+</div>
+
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
