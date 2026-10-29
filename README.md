@@ -26,9 +26,9 @@ De pagina bevat een uitgelicht artikel, een overzicht van opinieartikelen, een z
 * Dark mode: gemaakt met een checkbox en CSS.
 
 ## Bronnen
-* HvanA – Opinie
-* MDN Web Docs
-* WCAG-richtlijnen
+* [HvanA – Opinie](https://hvana.nl/opinie)
+* [MDN Web Docs](https://developer.mozilla.org/)
+* [WCAG-richtlijnen](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
