@@ -16,7 +16,7 @@ Voor deze opdracht heb ik de opiniepagina van HvanA opnieuw ontworpen en gebouwd
 
 De pagina bevat een uitgelicht artikel, een overzicht van opinieartikelen, een zoekfunctie, categorieënfilters en een dark mode. Bezoekers kunnen artikelen ook met een hartje markeren.
 
-Live website: Bekijk de website
+**Live website:** [Bekijk de website](https://beyzaarkan.github.io/all-human-accessible-website/)
 
 ## Kenmerken
 * HTML: semantische elementen zoals header, nav, main, section, article en footer.
