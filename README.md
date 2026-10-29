@@ -12,14 +12,23 @@ De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Voor deze opdracht heb ik de opiniepagina van HvanA opnieuw ontworpen en gebouwd. Het doel is om de pagina overzichtelijker, toegankelijker en gebruiksvriendelijker te maken, vooral voor studenten die de website op hun telefoon bezoeken.
+
+De pagina bevat een uitgelicht artikel, een overzicht van opinieartikelen, een zoekfunctie, categorieënfilters en een dark mode. Bezoekers kunnen artikelen ook met een hartje markeren.
+
+Live website: Bekijk de website
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+* HTML: semantische elementen zoals header, nav, main, section, article en footer.
+* CSS: mobile-first ontwerp met media queries, CSS Grid en Flexbox voor de responsive layout.
+* JavaScript: hamburgermenu, zoekfunctie en filters voor de artikelen.
+* Toegankelijkheid: gebruik van aria-label, aria-pressed, zichtbare focusstijlen en labels bij invoervelden.
+* Dark mode: gemaakt met een checkbox en CSS.
 
 ## Bronnen
+* HvanA – Opinie
+* MDN Web Docs
+* WCAG-richtlijnen
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
